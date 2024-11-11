@@ -68,5 +68,6 @@ public class StudentMarksStatistics {
         System.out.printf("Standard Deviation: %.2f%n", standardDeviation);
 
         scanner.close();
-    }
+    }  
+    
 }
