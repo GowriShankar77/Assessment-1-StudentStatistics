@@ -5,11 +5,11 @@ public class StudentMarksStatistics {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Step 1: Get assignment name
+        // Getting assignment name
         System.out.print("Enter the assignment name: ");
         String assignmentName = scanner.nextLine();
 
-        // Step 2: Input and validate 30 student marks
+        // Input and verifing 30 student marks
         double[] marks = new double[30];
         for (int i = 0; i < 30; i++) {
             while (true) {
@@ -28,7 +28,7 @@ public class StudentMarksStatistics {
             }
         }
 
-        // Step 3: Print assignment name and marks
+        // assignment name and marks
         System.out.println("\nAssignment: " + assignmentName);
         System.out.print("Marks: ");
         for (double mark : marks) {
@@ -36,7 +36,7 @@ public class StudentMarksStatistics {
         }
         System.out.println();
 
-        // Step 4: Calculate highest and lowest marks using Algorithm 1
+        // Calculate highest and lowest marks using Algorithm 1
         double highest = marks[0];
         double lowest = marks[0];
         for (double mark : marks) {
@@ -50,7 +50,7 @@ public class StudentMarksStatistics {
         System.out.println("Highest Mark: " + highest);
         System.out.println("Lowest Mark: " + lowest);
 
-        // Step 5: Calculate mean and standard deviation using Algorithm 2
+        //Calculate mean and standard deviation using Algorithm 2
         double sum = 0;
         for (double mark : marks) {
             sum += mark;
